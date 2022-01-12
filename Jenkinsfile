@@ -11,13 +11,13 @@ pipeline {
             steps {
                 powershell 'Write-Output "docker images -a"'
 //                  pwsh 'docker images -a'
-//                 pwsh """
-//                 cd azure-vote/
-//                 docker iamges -a
-//                 docker build -t jenkins pipeline .
-//                 docker images -a
-//                 cd ..
-//                 """
+                powershell """
+                cd azure-vote/
+                docker iamges -a
+                docker build -t jenkins pipeline .
+                docker images -a
+                cd ..
+                """
             }
         }
     }
