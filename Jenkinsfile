@@ -9,8 +9,8 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                powershell 'Write-Output "Hello, World!"'
-//                 pwsh 'docker images -a'
+                powershell 'Write-Output "docker images -a"'
+//                  pwsh 'docker images -a'
 //                 pwsh """
 //                 cd azure-vote/
 //                 docker iamges -a
